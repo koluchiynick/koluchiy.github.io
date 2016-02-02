@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/action1">
+    <p>Name <br><input type="text" name="Name"></p>
+    <p>Email <br><input type="text" name="Email"></p>
+    <p>Sex <br>
+        <input type="radio" name="sex" value="Male">Male
+        <input type="radio" name="sex" value="Female">Female
+    </p>
+    <p>Current status <br>
+        <input type="checkbox" name="student">Student <br>
+        <input type="checkbox" name="employed">Employed <br>
+        <input type="checkbox" name="unemployed">Unemployed
+    </p>
+    <p>Month and Year of birth <br>
+        <select name="Month" >
+            <option value="Январь">Январь</option>
+            <option value="Февраль">Февраль</option>
+            <option value="Март">Март</option>
+            <option value="Апрель">Апрель</option>
+        </select>
+        <select name="Year" >
+            <option value="1981">1981</option>
+            <option value="1982">1982</option>
+            <option value="1983">1983</option>
+            <option value="1984">1984</option>
+        </select>
+    </p>
+    <p>Skills and Technologies<br>
+        <select multiple size="10" name="Skills" >
+            <optgroup label="Tech skill">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="git">git</option>
+            </optgroup>
+            <optgroup label="Soft skill">
+                <option value="TimeMan">Time management</option>
+                <option value="Proactivity">Proactivity</option>
+                <option value="Teamwork">Teamwork</option>
+                <option value="Leadership">Leadership</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>Photo <br>
+        <input type="file" name="Photo" >
+     </p>
+    <p>Comments <br>
+        <textarea name="Comments" id="Comments" cols="30" rows="5"></textarea>
+    </p>
+    <input type="submit" name="Save" value="Save" >
+</form>
+</body>
+</html>
